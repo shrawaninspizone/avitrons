@@ -1,0 +1,103 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<div class="inner-banner">
+    <div class="container">
+        <div class="inner-title text-center">
+            <h3>Blog</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="inner-banner-shape">
+        <div class="shape-one"><img src="assets/img/inner-banner/banner-shape1.png" alt="Images"></div>
+        <div class="shape-two"><img src="assets/img/inner-banner/banner-shape2.png" alt="Images"></div>
+        <div class="shape-three"><img src="assets/img/inner-banner/banner-shape3.png" alt="Images"></div>
+        <div class="inner-banner-dots"><img src="assets/img/shape/dots-shape.png" alt="Images"></div>
+    </div>
+</div>
+
+<div class="blog-area pt-50 pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="sp-before sp-after">Our Blogs</span>
+            <h2 class="h2-color2">LATEST BLOGS</h2>
+            <p class="margin-auto">The Avitron’s Guide A simple way to stay tuned with the latest digital solutions and updates.</p>
+        </div>
+
+        <div class="row pt-45">
+            <div class="col-lg-4 col-md-6" *ngFor="let post of blogPosts">
+                <div class="blog-card">
+                    <a [routerLink]="['/posts', post.slug]"><img [src]="post.fimg_url"  alt="Images"></a>
+                    
+                    <div class="content">
+                        <ul>
+                            <li><i class='bx bx-time-five'></i> 09 April 2020</li>
+                            <li><i class='bx bx-purchase-tag-alt'></i> <a routerLink="/blog">Marketing</a></li>
+                        </ul>
+                        <h3 ><a [routerLink]="['/posts', post.slug]" class="post-title" [innerHTML]="post.title.rendered "></a></h3>
+                        <p [innerHTML]="post.excerpt.rendered | slice:0:400 ">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="blog-shape">
+        <div class="shape1"><img src="assets/img/shape/shape1.png" alt="Images"></div>
+        <div class="shape2"><img src="assets/img/shape/shape5.png" alt="Images"></div>
+        <div class="shape3"><img src="assets/img/shape/shape4.png" alt="Images"></div>
+        <div class="shape4"><img src="assets/img/shape/shape6.png" alt="Images"></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="brand-logo-area pt-100">
+    <div class="container-fluid">
+        <div class="container-max">
+            <div class="brand-logo-slider owl-carousel owl-theme">
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo1.png" alt="Images">
+                </div>
+                
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo2.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo3.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo4.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo5.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo6.png" alt="Images">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<app-footer-style-two></app-footer-style-two>

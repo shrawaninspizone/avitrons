@@ -1,0 +1,16 @@
+@import '../../../../assets/dashboard/vendors/mdi/css/materialdesignicons.min.css';
+
+@import '../../../../assets/dashboard/vendors/css/vendor.bundle.base.css';
+@import '../../../../assets/dashboard/css/style.css';
+
+
+@import "~bootstrap/scss/bootstrap";
+@import 'bootstrap/dist/css/bootstrap.min.css';
+// @import '../../../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@media (min-width: 768px){
+.col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%!important;
+}
+}

@@ -1,0 +1,28 @@
+.product-title-avitrons
+{
+    text-align:center;
+}
+
+.product-page-avi-t{
+    text-align:center;
+}
+
+.product-button-avi-page {
+    padding: 0px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-transform: capitalize;
+    background-image: linear-gradient(to right, #2966be, #0a58ca);
+    border-radius: 50px;
+    transition: 0.7s;
+}
+a:hover {
+    color: #ffffff;
+}
+
+a{
+    color: #ffffff;
+}

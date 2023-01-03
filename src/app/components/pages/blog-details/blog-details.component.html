@@ -1,0 +1,202 @@
+<app-navbar-style-two></app-navbar-style-two>
+
+<div class="inner-banner">
+    <div class="container">
+        <div class="inner-title text-center" *ngFor="let singlePosts of singlePost">
+            <h3 [innerHTML]="singlePosts.title.rendered"></h3>
+
+            <ul class="inner-list">
+                <li><i class='bx bx-user'></i> Avitrons</li>
+                <li><i class='bx bx-calendar'></i>{{singlePosts.date}}</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="inner-banner-shape">
+        <div class="shape-one"><img src="assets/img/inner-banner/banner-shape1.png" alt="Images"></div>
+        <div class="shape-two"><img src="assets/img/inner-banner/banner-shape2.png" alt="Images"></div>
+        <div class="shape-three"><img src="assets/img/inner-banner/banner-shape3.png" alt="Images"></div>
+        <div class="inner-banner-dots-2"><img src="assets/img/shape/dots-shape.png" alt="Images"></div>
+    </div>
+</div>
+
+<div class="blog-details-area pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="blog-article">
+                    <div class="blog-article-img" *ngFor="let singlePosts of singlePost">
+                            <img [src]="singlePosts.fimg_url">
+                    </div>
+
+                    <div class="article-content"  *ngFor="let singlePosts of singlePost">
+                        <h2 [innerHTML]="singlePosts.title.rendered "></h2>
+                        <div class="content-text">
+                            <p [innerHTML]="singlePosts.content.rendered"></p>
+                        </div>
+                        
+                    </div>
+
+                    <!-- <div class="blog-article-share">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-sm-6 col-md-7">
+                                <div class="blog-tag">
+                                    <ul *ngFor="let singlePosts of singlePost">
+                                        <li>Tags:</li>
+                                        <li><a routerLink="/blog"><p [innerHTML]="singlePosts.Tag.rendered"></p></a></li>
+                                        <li><a routerLink="/blog">#Business</a></li>
+                                        <li><a routerLink="/blog">#Internet</a></li>
+                                        <li><a routerLink="/blog">#Property</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-5 col-sm-6 col-md-5">
+                                <ul class="social-icon">
+                                    <li><a target="_blank" href="#"><i class="bx bxl-facebook"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="bx bxl-twitter"></i></a></li>
+                                    <li><a target="_blank" href="#"><i class="bx bxl-linkedin"></i></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="article-author">
+                        <ul>
+                            <li>
+                                <img src="assets/img/blog/blog-profile1.png" alt="Image">
+                                <h3>Avitrons Blog</h3>
+                                <span>Author, Writer</span>
+                                <p>Avitron Marke was established in the year 2018, which spends significant time in Search Engine Optimization, Digital Marketing, Ecommerce Advancement, Web Application, Custom Development and Blaze.</p>
+                            </li>
+                        </ul>
+                        <div class="author-social-link">
+                            <ul class="social-icon">
+                                <li><a target="_blank" href="#"><i class="bx bxl-facebook"></i></a></li>
+                                <li><a target="_blank" href="#"><i class="bx bxl-twitter"></i></a></li>
+                                <li><a target="_blank" href="#"><i class="bx bxl-instagram"></i></a></li>
+                                <!-- <li><a target="_blank" href="#"><i class="bx bxl-linkedin"></i></a></li>
+                                <li><a target="_blank" href="#"><i class="bx bxl-youtube"></i></a></li> -->
+                            </ul>
+                        </div>
+                        <div class="author-shape">
+                            <div class="shape1"><img src="assets/img/blog/blog-shape.png" alt="Images"></div>
+                            <div class="shape2"><img src="assets/img/blog/blog-shape2.png" alt="Images"></div>
+                            <div class="shape-dots"><img src="assets/img/blog/blog-dots.png" alt="Images"></div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="article-post">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="article-post-share">
+                                    <span>Jun 12, 2020 / <a routerLink="/blog">SEO</a></span>
+                                    <a routerLink="/blog-details"><h3>Successful digital marketer does first to ensure they get</h3></a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6">
+                                <div class="article-post-share">
+                                    <span>April 19, 2020 / <a routerLink="/blog">Web</a></span>
+                                    <a routerLink="/blo-detailsg"><h3 class="active">Marketer who knows how to execute their campaigns</h3></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                  
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-12">
+                <div class="services-widget-right">
+                   <app-sidebar></app-sidebar>
+                </div>
+            </div>
+
+            <!-- <div class="col-lg-4 col-md-12">
+                <div class="blog-widget-left">
+                    <div class="blog-widget ">
+                        <h3 class="title">Search</h3>
+
+                        <div class="search-widget">
+                            <form class="search-form">
+                                <input type="search" class="form-control" placeholder="Search...">
+                                <button type="submit"><i class="bx bx-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="blog-widget">
+                        <h3 class="title">Recent Posts</h3>
+
+                        <div class="widget-popular-post">
+                            <article class="item">
+                                <a routerLink="/blog-details" class="thumb"><span class="full-image cover bg1" role="img"></span></a>
+                                <div class="info">
+                                    <span>Jnauary 12, 2020</span> 
+                                    <h4 class="title-text"><a routerLink="/blog-details">A Guide to Google SEO</a></h4>
+                                    <p>Jhon hack from an iitial feaity study</p>
+                                </div>
+                            </article>
+
+                            <article class="item">
+                                <a routerLink="/blog-details" class="thumb"><span class="full-image cover bg2" role="img"></span></a>
+                                <div class="info">
+                                    <span>June 30, 2020</span>
+                                    <h4 class="title-text"><a routerLink="/blog-details">15 SEO Best Practices</a></h4>
+                                    <p>Jhon hack from an iitial feaity study</p>
+                                </div>
+                            </article>
+
+                            <article class="item">
+                                <a routerLink="/blog-details" class="thumb"><span class="full-image cover bg3" role="img"></span></a>
+                                <div class="info">
+                                    <span>April 09, 2020</span>
+                                    <h4 class="title-text"><a routerLink="/blog-details">Website Architecture</a> </h4>
+                                    <p>Jhon hack from an iitial feaity study</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="blog-widget">
+                        <h3 class="title">Categories</h3>
+
+                        <div class="widget_categories">
+                            <ul>
+                                <li><a routerLink="/blog">Design <span>(1)</span></a></li>
+                                <li><a routerLink="/blog">Lifestyle <span>(4)</span></a></li>
+                                <li><a routerLink="/blog">Camping <span>(3)</span></a></li>
+                                <li><a routerLink="/blog">Support <span>(2)</span></a></li>
+                                <li><a routerLink="/blog">Device <span>(6)</span></a></li>
+                                <li><a routerLink="/blog">Internet <span>(18)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="blog-widget">
+                        <h3 class="title">Tags</h3>
+
+                        <ul class="blog-widget-tag">
+                            <li><a routerLink="/blog">#SEO</a></li>
+                            <li><a routerLink="/blog">#Internet</a></li>
+                            <li><a routerLink="/blog">#Web</a></li>
+                            <li><a routerLink="/blog">#Sass</a></li>
+                            <li><a routerLink="/blog">#It & Support</a></li>
+                            <li><a routerLink="/blog">#Tik</a></li>
+                            <li><a routerLink="/blog">#Tips</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+
+<app-footer-style-two></app-footer-style-two>
